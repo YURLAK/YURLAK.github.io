@@ -1,7 +1,7 @@
 ---
-title: About
+title: 关于
 icon: fas fa-info-circle
-order: 4
+order: 5
 ---
 
 我是YURLAK(谐音YOU ARE LUCK)，GEEK一枚，同时是Python开发者兼一名初一生(过了今年暑假就是了)，我会在这里发布一些技术类(计算机，编程)文章(教程)，当然不缺乏一些生活感悟类的随笔

@@ -23,10 +23,10 @@ timezone: Asia/Shanghai
 
 title: YURLAK's Blog                          # the main title
 
-tagline: My personal blog.   # it will display as the sub-title
+tagline: 即使被全世界孤立，也要一个人笑得精彩！   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  My personal blog.
+  YURLAK的个人Blog
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://YURLAK.github.io'
