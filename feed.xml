@@ -4,7 +4,7 @@
   <id>https://yurlak.github.io/</id>
   <title>YURLAK's Blog</title>
   <subtitle>YURLAK的个人Blog</subtitle>
-  <updated>2022-07-27T10:21:26+08:00</updated>
+  <updated>2022-07-28T13:50:07+08:00</updated>
   <author>
     <name>YurlakSun</name>
     <uri>https://yurlak.github.io/</uri>
@@ -17,6 +17,48 @@
   <icon>//assets/img/favicons/favicon.ico</icon>
   <logo>//assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Welcome</title>
+    <link href="https://yurlak.github.io/posts/Welcome/" rel="alternate" type="text/html" title="Welcome" />
+    <published>2022-07-28T00:00:00+08:00</published>
+  
+    <updated>2022-07-28T00:00:00+08:00</updated>
+  
+    <id>https://yurlak.github.io/posts/Welcome/</id>
+    <content src="https://yurlak.github.io/posts/Welcome/" />
+    <author>
+      <name>YurlakSun</name>
+    </author>
+
+  
+    
+    <category term="Jekyll" />
+    
+    <category term="更新" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      欢迎来到我的BLOG，这是一个以计算机技术为主的个人BLOG，当然也有一些生活感悟之类的。
+
+  We believe that writing is about content, about what you want to say – not about fancy formatting.
+
+
+我们坚信写作写的是内容，所思所想，而不是花样格式。
+
+    </summary>
+  
+
+  </entry>
 
 </feed>
 
