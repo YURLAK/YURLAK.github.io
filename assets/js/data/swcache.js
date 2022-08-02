@@ -48,7 +48,7 @@ const resource = [
 const allowedDomains = [
   
 
-  'localhost:4000',
+  'YURLAK.github.io/',
 
   
 
