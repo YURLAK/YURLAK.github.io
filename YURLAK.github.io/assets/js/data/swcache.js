@@ -48,7 +48,7 @@ const resource = [
 const allowedDomains = [
   
 
-  'YURLAK.github.io/',
+  'YURLAK.github.io',
 
   
 
