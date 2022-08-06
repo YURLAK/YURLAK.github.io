@@ -260,9 +260,10 @@
   
 </head>
 
-
   <body data-spy="scroll" data-target="#toc" data-topbar-visible="true">
 
+    <script type="text/javascript" src="/love.js"></script>
+    
     <!--
   The Side Bar
 -->
@@ -717,7 +718,7 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="1793 字">
+  title="1791 字">
   <em>9 分钟</em>阅读</span>
 
     </div>
@@ -748,9 +749,9 @@
 <p>完全可以按照<a href="https://jekyllrb.com/docs/">Jekyll官网</a>搭建博客。本文主要讲讲测试过程中会遇到的一些问题。</p>
 
 <p><strong>Jekyll的默认主题是minima，我选择了适合编写个人BLOG的Chirpy主题。</strong>
-首先在Github创建一个名字为<code class="language-plaintext highlighter-rouge">&lt;GH-username&gt;.gihtub.io</code>的仓库，例如我的用户名是<code class="language-plaintext highlighter-rouge">YURLAK</code>，那就创建<code class="language-plaintext highlighter-rouge">YURLAK.github.io</code>，然后把仓库clone到本地。你还需要创建两个分支，一个为<code class="language-plaintext highlighter-rouge">main</code>，一个为<code class="language-plaintext highlighter-rouge">gh-pages</code>，这是构建是默认的分支名称，当然你可以改成<code class="language-plaintext highlighter-rouge">master</code>之类的，当时要在<code class="language-plaintext highlighter-rouge">pages-deploy.yml.hook</code>文件里将<code class="language-plaintext highlighter-rouge">main</code>修改为新的分支名。</p>
+首先在Github创建一个名字为<code class="language-plaintext highlighter-rouge">&lt;GH-username&gt;.gihtub.io</code>的仓库，例如我的用户名是<code class="language-plaintext highlighter-rouge">YURLAK</code>，那就创建<code class="language-plaintext highlighter-rouge">YURLAK.github.io</code>，然后把仓库clone到本地。你还需要创建两个分支，一个为<code class="language-plaintext highlighter-rouge">main</code>，一个为<code class="language-plaintext highlighter-rouge">gh-pages</code>，这是构建页面默认的名称，当然你可以改成<code class="language-plaintext highlighter-rouge">master</code>之类的，但时要在<code class="language-plaintext highlighter-rouge">pages-deploy.yml.hook</code>文件里将<code class="language-plaintext highlighter-rouge">main</code>修改为新的分支名。</p>
 
-<p>然后clone Chripy模版，虽然官方推荐的是使用<a href="https://www.github.com/cotes2020/chirpy-starter">Chirpy Starter</a>模版，但是相比模版还是<a href="https://github.com/cotes2020/jekyll-theme-chirpy">默认仓库</a>更加全面。</p>
+<p>然后clone Chripy模版，虽然官方推荐的是使用<a href="https://www.github.com/cotes2020/chirpy-starter">Chirpy Starter</a>模版，但相比模版还是<a href="https://github.com/cotes2020/jekyll-theme-chirpy">默认仓库</a>更加全面。</p>
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="已复制！"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1170,7 +1171,7 @@ jekyll-archives:
 
 <h2 id="编写博客"><span class="mr-2">编写博客</span><a href="#编写博客" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>来到<code class="language-plaintext highlighter-rouge">_posts</code>文件夹，用<code class="language-plaintext highlighter-rouge">YYYY-MM-DD-title.md</code>对你的文章命名，例如<code class="language-plaintext highlighter-rouge">2022-01-01</code>，注意个位数之前用0填充，否则无法识别你的文章。</p>
+<p>来到<code class="language-plaintext highlighter-rouge">_posts</code>文件夹，用<code class="language-plaintext highlighter-rouge">YYYY-MM-DD-title.md</code>对你的文章命名，例如<code class="language-plaintext highlighter-rouge">2022-07-28-Welcome.md</code>，注意个位数之前用0填充，否则无法识别你的文章。</p>
 
 <p>现在编写你的博客头文件，例如：</p>
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
@@ -1662,6 +1663,7 @@ order: 5
 </div>
 
 
+
         <!-- The Footer -->
 
 <footer class="row pl-3 pr-3">
@@ -1698,7 +1700,6 @@ order: 5
 
 
       </div>
-
       <!--
   The Search results
 -->
@@ -1985,7 +1986,6 @@ SimpleJekyllSearch({
 <!-- commons -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
-
 
 
 
