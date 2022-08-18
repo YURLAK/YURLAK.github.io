@@ -17,5 +17,3 @@ The Kid LAROI & Justin Bieber-**STAY:**<audio src="/assets/music/STAY.mp3" contr
 24kGoldn, Justin Bieber, J Balvin & iann dior-**Mood(Remix):**<audio src="/assets/music/MoodRemix.mp3" controls="controls" loop="loop" preload="meta"></audio>
 
 朴树-**平凡之路:**<audio src="/assets/music/平凡之路.mp3" controls="controls" loop="loop" preload="meta"></audio>
-
-Maroon5-**Sugar:**<audio src="/assets/music/Sugar.mp3" controls="controls" loop="loop" preload="meta"></audio>
