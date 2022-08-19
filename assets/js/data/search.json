@@ -1,18 +1,49 @@
----
-layout: compress
-swcache: true
----
-
 [
-  {% for post in site.posts %}
+  
   {
-    "title": {{ post.title | jsonify }},
-    "url": {{ post.url | relative_url | jsonify }},
-    "categories": {{ post.categories | join: ', ' | jsonify }},
-    "tags": {{ post.tags | join: ', ' | jsonify }},
-    "date": "{{ post.date }}",
-    {% include no-linenos.html content=post.content %}
-    "snippet": {{ content | strip_html | strip_newlines | jsonify }}
-  }{% unless forloop.last %},{% endunless %}
-  {% endfor %}
+    "title": "如何免费搭建个人网站",
+    "url": "/posts/%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/",
+    "categories": "Jekyll, 博客搭建",
+    "tags": "博客搭建",
+    "date": "2022-08-09 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "  厌倦了CSDN，想拥有一个像我一样的个人网站（BLOG）？No Problem！看着Internet上形形色色的网站，想必你肯定羡慕搭建一个个人博客，却又矜持：我有能力吗？我有足够的时间吗？我担得起服务器费吗……注册账号，创建仓库Github Pages专门提供了免费创建网站的服务，首先去Github官网注册一个账号，并新建一个名为你的github用户名.github.io的存储库。确保你的电脑上已经安装了Git，未安装的话可以参考这篇安装教程，并且配置了SSH key，可以参考Github如何配置SSH key，然后复制你的仓库SSH地址，并clone到本地。git clone git@github.com:你的Github用户名/你的Github用户名.github.io.git选择你的网站系统搭建个人网站一般需要网站系统，知名的有Jekyll、Hexo、Hugo……之类的但是我推荐新手选择Zola，熟悉网站搭建之后就可以尝试Jekyll了Zola是一个用Rust编写的静态网页生成系统，优点是使用方便，面向新手友好；Jekyll用Ruby编写，优点是主题丰富（数以百计），可添加插件多，缺点是难配置，需要经常bundle install安装缺失的软件包。上传在本地测试成功后，将仓库传输到云端，像Zola和Jekyll自带构建程序，上传main分支后会在云端自动构建gh-pages——网站html前端。我在构建Setup Ruby步骤时遇到了Jekyll exit code 16的错误，出错在bundle install，目前唯一的解决办法是在本地构建完后上传到云端。相比本地构建而言，云端构建更加方便，大大简化了手动构建的流程，并且能实现跨平台构建。祝你成功！"
+  },
+  
+  {
+    "title": "Jekyll Chirpy主题+Github Pages搭建个人博客",
+    "url": "/posts/Jekyll-Chirpy%E4%B8%BB%E9%A2%98+Github-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/",
+    "categories": "Jekyll, 博客搭建",
+    "tags": "博客搭建",
+    "date": "2022-08-04 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "  还没想好作为第一篇正式博客该写些什么，那就谈谈此网站是如何搭建的吧!前言在开始之前，请确保：  1.你十分了解编程，这不用说了吧:-)  2.你能熟练使用git，对Github，网站开发有一定了解(markdown和html)。  3.配置好远程SSH key，不然是无法将本地博客传输到云端的。  4.你做事十分严谨，很少出现低级错误。  4.你自主探索能力强，网站开发尤其需要耐心。Let’s Start!完全可以按照Jekyll官网搭建博客。本文主要讲讲测试过程中会遇到的一些问题。Jekyll的默认主题是minima，我选择了适合编写个人BLOG的Chirpy主题。首先在Github创建一个名字为&lt;GH-username&gt;.gihtub.io的仓库，例如我的用户名是YURLAK，那就创建YURLAK.github.io，然后把仓库clone到本地。你还需要创建两个分支，一个为main，一个为gh-pages，这是构建页面默认的名称，当然你可以改成master之类的，但时要在pages-deploy.yml.hook文件里将main修改为新的分支名。然后clone Chripy模版，虽然官方推荐的是使用Chirpy Starter模版，但相比模版还是默认仓库更加全面。git clone git@github.com:cotes2020/jekyll-theme-chirpy.gitclone好之后，cd到博客文件夹，对网站进行初始化cd ~./tools #cd到文件夹./init.sh #运行init.sh程序，初始化网站然后编写自己的_config.yml文件，以下是我的_config.yml配置：# The Site Configuration# Import the themetheme: jekyll-theme-chirpy# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites# and doesn't have a custom domain.baseurl: ''# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,# otherwise, the layout language will use the default value of 'en'.lang: zh-CN# Additional parameters for datetime localization, optional. › https://github.com/iamkun/dayjs/tree/dev/src/localeprefer_datetime_locale:# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzonetimezone: Asia/Shanghai# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md# ↓ --------------------------title: YURLAK's Blog                          # the main titletagline: 即使被全世界孤立，也要一个人笑得精彩！   # it will display as the sub-titledescription: &gt;-                        # used by seo meta and the atom feed  YURLAK的个人Blog# fill in the protocol &amp; hostname for your site, e.g., 'https://username.github.io'url: 'https://YURLAK.github.io'github:  username: YURLAK             # change to your github usernametwitter:  username: YURLAKSUN            # change to your twitter usernamesocial:  # Change to your full name.  # It will be displayed as the default author of the posts and the copyright owner in the Footer  name: YurlakSun  email: yurlaksun@gmail.com            # change to your email address  links:    # The first element serves as the copyright owner's link    - https://twitter.com/YURLAKSUN     # change to your twitter homepage    - https://github.com/YURLAK       # change to your github homepage    # Uncomment below to add more social links    # - https://www.facebook.com/username    # - https://www.linkedin.com/in/usernamegoogle_site_verification:               # fill in to your verification string# ↑ --------------------------# The end of `jekyll-seo-tag` settingsgoogle_analytics:  id:                 # fill in your Google Analytics ID  # Google Analytics pageviews report settings  pv:    proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine    cache_path:       # the local PV cache data, friendly to visitors from GFW region# Prefer color scheme setting.## Note: Keep empty will follow the system prefer color by default,# and there will be a toggle to switch the theme between dark and light# on the bottom left of the sidebar.## Available options:##     light  - Use the light color scheme#     dark   - Use the dark color scheme#theme_mode:   # [light|dark]# The CDN endpoint for images.# Notice that once it is assigned, the CDN url# will be added to all image (site avatar &amp; posts' images) paths starting with '/'## e.g. 'https://cdn.com'img_cdn:# the avatar on sidebar, support local or CORS resourcesavatar: assets/img/profilephoto.jpeg# boolean type, the global switch for ToC in posts.toc: truecomments:  active: 'giscus'       # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable  # The active options are as follows:  disqus:    shortname:    # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname  # utterances settings › https://utteranc.es/  utterances:    repo:         # &lt;gh-username&gt;/&lt;repo&gt;    issue_term:   # &lt; url | pathname | title | ...&gt;  # Giscus options › https://giscus.app  giscus:    repo:            'YURLAK/YURLAK.github.io' # &lt;gh-username&gt;/&lt;repo&gt;    repo_id:         'R_kgDOHtjxxA'    category:        'Announcements'    category_id:     'DIC_kwDOHtjxxM4CQhHC'    mapping:         'pathname' # optional, default to 'pathname'    input_position:  'top' # optional, default to 'bottom'    lang:            'zh-CN' # optional, default to the value of `site.lang`# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assetsassets:  self_host:    enabled:      # boolean, keep empty means false    # specify the Jekyll environment, empty means both    # only works if `assets.self_host.enabled` is 'true'    env:          # [development|production]pwa:  enabled: true   # the option for PWA featurepaginate: 5# ------------ The following options are not recommended to be modified ------------------kramdown:  syntax_highlighter: rouge  syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options    css_class: highlight    # default_lang: console    span:      line_numbers: false    block:      line_numbers: true      start_line: 1collections:  tabs:    output: true    sort_by: orderdefaults:  - scope:      path: ''          # An empty string here means all files in the project      type: posts    values:      layout: post      comments: true    # Enable comments in posts.      toc: true         # Display TOC column in posts.      # DO NOT modify the following parameter unless you are confident enough      # to update the code of all other post links in this project.      permalink: /posts/:title/  - scope:      path: _drafts    values:      comments: false  - scope:      path: ''      type: tabs             # see `site.collections`    values:      layout: page      permalink: /:title/  - scope:      path: assets/img/favicons    values:      swcache: true  - scope:      path: assets/js/dist    values:      swcache: truesass:  style: compressedcompress_html:  clippings: all  comments: all  endings: all  profile: false  blanklines: false  ignore:    envs: [development]exclude:  - '*.gem'  - '*.gemspec'  - tools  - README.md  - CHANGELOG.md  - LICENSE  - gulpfile.js  - node_modules  - package*.jsonjekyll-archives:  enabled: [categories, tags]  layouts:    category: category    tag: tag  permalinks:    tag: /tags/:name/    category: /categories/:name/其中comments那一段我添加了giscus评论，如果你想为自己的网站添加评论功能，那么详见我的另一篇文章。编写博客来到_posts文件夹，用YYYY-MM-DD-title.md对你的文章命名，例如2022-07-28-Welcome.md，注意个位数之前用0填充，否则无法识别你的文章。现在编写你的博客头文件，例如：---layout: posttitle:  \"Jekyll Chirpy Theme+Github Pages搭建个人博客\"date:   2022-08-04categories: Jekyll 博客搭建tags: [博客搭建]---传输到远程仓库保存好博客后在文件夹下打开终端：git add .git commit -m \"First commit\"git push --force其中--force是为了防止远程仓库与本地仓库不匹配的情况。常见问题解答Q1:如何添加tag？例如你的“音乐”tag。A1：在_tabs文件夹内新建XXXX.md文件，例如donation.md。注意文件的开头这样写：---title: 打赏icon: fas fa-info-circleorder: 5---文件命不做规定，其中title是你要显示tag的名字，order是tag的排列顺序，icon那行不用改。Q2:为什么Automatic Build-&gt;Setup Ruby-&gt;bundle install那一步会出现Jekyll exit code 16？A2:是的，我也碰到过exit code 16的问题，但是现在仍未解决，唯一的方法是在本地网站文件夹下执行bundle exec jekyll build构建网站，然后将_site里的文件传输到远程仓库。持续更新！欢迎在下方留下你的评论:-)"
+  },
+  
+  {
+    "title": "Welcome",
+    "url": "/posts/Welcome/",
+    "categories": "Jekyll, 更新",
+    "tags": "Welcome, 测试",
+    "date": "2022-07-28 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "欢迎来到我的BLOG，这是一个以计算机技术为主的个人BLOG，当然也有一些生活感悟之类的。  We believe that writing is about content, about what you want to say – not about fancy formatting.我们坚信写作写的是内容，所思所想，而不是花样格式。"
+  }
+  
 ]
+
