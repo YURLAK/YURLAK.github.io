@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "网站Giscus评论系统设置",
+    "url": "/posts/%E7%BD%91%E7%AB%99Giscus%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/",
+    "categories": "Jekyll, 评论系统",
+    "tags": "Giscus, 评论系统",
+    "date": "2022-08-22 00:00:00 +0800",
+    
+
+
+
+
+
+    "snippet": "  在本网站的页底，随处可见如下图所示的评论框。想为你的网站免费添加评论系统？这篇教程足以帮到你。前言首先我推荐你使用Jekyll Chirpy主题，因为这个主题自带了三种知名的评论系统，分别是：disqus、utterances和目前我正在使用的giscus。可惜的是disqus官方已经在2018年底的时候正式宣布了disqus的停用。现在只有utterances和giscus供我们选择，giscus最大的特点就是使用方便，你可以参考Giscus官网。配置Giscus首先我们访问Giscus官网，进入页面后往下滑动到“配置”，选择语言为简体中文然后设置你要添加Giscus评论系统的仓库，官网的说明如下：仓库选择 giscus 连接到的仓库。请确保：此仓库是公开的，否则访客将无法查看discussion。giscus app 已安装否则访客将无法评论和回应。Discussions功能已在你的仓库中启用。翻译官：你需要将你的仓库设成公开，然后在你的网站仓库中安装并启用Giscus App（等会儿会讲到），并且打开Discussions功能。Discussions功能？要启用Discussions功能请依次进入仓库的Settings-&gt;Features然后勾上Discussions。myusername/myrepo例如YURLAK/YURLAK.github.io。分类随意，推荐使用公告，这样只允许管理员操作。填写特性是建议添加将评论框放在评论上方，更加方便，主题同样随意。随后你要做的只需要将启用Giscus下方的一段html代码中的repo啊id啊category啦填入到自己的_config.yml文件里。您可以参考我的_config.yml文件Giscus部分的配置：comments:  active: 'giscus'       # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable  # The active options are as follows:  disqus:    shortname:    # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname  # utterances settings › https://utteranc.es/  utterances:    repo:         # &lt;gh-username&gt;/&lt;repo&gt;    issue_term:   # &lt; url | pathname | title | ...&gt;  # Giscus options › https://giscus.app  giscus:    repo:            'YURLAK/YURLAK.github.io' # &lt;gh-username&gt;/&lt;repo&gt;    repo_id:         'R_kgDOHtjxxA'    category:        'Announcements'    category_id:     'DIC_kwDOHtjxxM4CQhHC'    mapping:         'pathname' # optional, default to 'pathname'    input_position:  'top' # optional, default to 'bottom'    lang:            'zh-CN' # optional, default to the value of `site.lang`启用Giscus并安装到仓库一切调试完成后，将你的网站部署到云端。打开你的网站后随意点击一篇文章，滑动到底部后点击“登录Github”。你还可以参考这篇教程。文章到这里就结束了，期待你的Success！欢迎在下方留下你的评论:-)"
+  },
+  
+  {
     "title": "如何免费搭建个人网站",
     "url": "/posts/%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/",
     "categories": "Jekyll, 博客搭建",

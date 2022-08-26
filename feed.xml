@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>YURLAK's Blog</title>
   <subtitle>YURLAK的个人Blog</subtitle>
-  <updated>2022-08-19T14:27:55+08:00</updated>
+  <updated>2022-08-26T19:09:26+08:00</updated>
   <author>
     <name>YurlakSun</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,61 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>网站Giscus评论系统设置</title>
+    <link href="http://localhost:4000/posts/%E7%BD%91%E7%AB%99Giscus%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/" rel="alternate" type="text/html" title="网站Giscus评论系统设置" />
+    <published>2022-08-22T00:00:00+08:00</published>
+  
+    <updated>2022-08-22T00:00:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/%E7%BD%91%E7%AB%99Giscus%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/</id>
+    <content src="http://localhost:4000/posts/%E7%BD%91%E7%AB%99Giscus%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/" />
+    <author>
+      <name>YurlakSun</name>
+    </author>
+
+  
+    
+    <category term="Jekyll" />
+    
+    <category term="评论系统" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  在本网站的页底，随处可见如下图所示的评论框。想为你的网站免费添加评论系统？这篇教程足以帮到你。
+
+
+
+
+前言
+首先我推荐你使用Jekyll Chirpy主题，因为这个主题自带了三种知名的评论系统，分别是：disqus、utterances和目前我正在使用的giscus。
+
+可惜的是disqus官方已经在2018年底的时候正式宣布了disqus的停用。现在只有utterances和giscus供我们选择，giscus最大的特点就是使用方便，你可以参考Giscus官网。
+
+配置Giscus
+
+首先我们访问Giscus官网，进入页面后往下滑动到“配置”，选择语言为简体中文
+
+然后设置你要添加Giscus评论系统的仓库，官网的说明如下：
+仓库
+选择 giscus 连接到的仓库。请确保：
+此仓库是公开的，否则访客将无法查看discussion。
+giscus app 已安装否则访客将无法...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
