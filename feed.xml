@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://yurlak.github.io/</id>
+  <id>http://localhost:4000/</id>
   <title>YURLAK's Blog</title>
   <subtitle>YURLAK的个人Blog</subtitle>
-  <updated>2022-08-27T18:25:05+08:00</updated>
+  <updated>2022-08-28T19:18:40+08:00</updated>
   <author>
     <name>YurlakSun</name>
-    <uri>https://yurlak.github.io/</uri>
+    <uri>http://localhost:4000/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://yurlak.github.io/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="zh-CN"
-    href="https://yurlak.github.io/"/>
+    href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator>
   <rights> © 2022 YurlakSun </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -20,14 +20,66 @@
 
   
   <entry>
+    <title>八月总结</title>
+    <link href="http://localhost:4000/posts/%E5%85%AB%E6%9C%88%E6%80%BB%E7%BB%93/" rel="alternate" type="text/html" title="八月总结" />
+    <published>2022-08-27T00:00:00+08:00</published>
+  
+    <updated>2022-08-27T00:00:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/%E5%85%AB%E6%9C%88%E6%80%BB%E7%BB%93/</id>
+    <content src="http://localhost:4000/posts/%E5%85%AB%E6%9C%88%E6%80%BB%E7%BB%93/" />
+    <author>
+      <name>YurlakSun</name>
+    </author>
+
+  
+    
+    <category term="随笔" />
+    
+    <category term="生活" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  这篇BLOG是我即将在中学开学之际 对这个暑假的总结，以及对未来设定的目标。
+
+
+生活方面
+
+每天都能把计划表打满钩，早睡早起，这算是对生活方面最好的诠释了。
+
+运动方面
+
+这个小升初暑假最令我开心的莫过于keeping得非常perfect的weight了，总之从早到晚的sports一直没停过。每天两三公里再加上一两千绳的卡路里消耗量堪称完美，从六下到现在基本没变过。COROS PACE2一直鼓励着我随时随地消耗卡路里（俗称减肥） 。
+
+
+
+计算机方面
+
+整个暑假唯一的乐趣就是更新BLOG，玩玩face_recognition，C++做做题，初中，我决定不再把重点过度放在计算机方面，而是关于对学术、知识的研究。因为计算机我已经走了不少弯路，从小就带上了那副东西，万幸今年的复查d没增长。面对眼前模糊的世界，我感到恐惧、担忧……但是对计算机的热度从未下降过：要是人类不会近视？要是…...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>网站Giscus评论系统设置</title>
-    <link href="https://yurlak.github.io/posts/%E7%BD%91%E7%AB%99Giscus%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/" rel="alternate" type="text/html" title="网站Giscus评论系统设置" />
+    <link href="http://localhost:4000/posts/%E7%BD%91%E7%AB%99Giscus%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/" rel="alternate" type="text/html" title="网站Giscus评论系统设置" />
     <published>2022-08-22T00:00:00+08:00</published>
   
     <updated>2022-08-22T00:00:00+08:00</updated>
   
-    <id>https://yurlak.github.io/posts/%E7%BD%91%E7%AB%99Giscus%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/</id>
-    <content src="https://yurlak.github.io/posts/%E7%BD%91%E7%AB%99Giscus%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/" />
+    <id>http://localhost:4000/posts/%E7%BD%91%E7%AB%99Giscus%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/</id>
+    <content src="http://localhost:4000/posts/%E7%BD%91%E7%AB%99Giscus%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/" />
     <author>
       <name>YurlakSun</name>
     </author>
@@ -76,13 +128,13 @@ giscus app 已安装否则访客将无法...
   
   <entry>
     <title>如何免费搭建个人网站</title>
-    <link href="https://yurlak.github.io/posts/%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" rel="alternate" type="text/html" title="如何免费搭建个人网站" />
+    <link href="http://localhost:4000/posts/%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" rel="alternate" type="text/html" title="如何免费搭建个人网站" />
     <published>2022-08-09T00:00:00+08:00</published>
   
     <updated>2022-08-09T00:00:00+08:00</updated>
   
-    <id>https://yurlak.github.io/posts/%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</id>
-    <content src="https://yurlak.github.io/posts/%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" />
+    <id>http://localhost:4000/posts/%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</id>
+    <content src="http://localhost:4000/posts/%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" />
     <author>
       <name>YurlakSun</name>
     </author>
@@ -128,13 +180,13 @@ git clone git@github.com:你的Github用户名/你的Github用户名.github.io.g
   
   <entry>
     <title>Jekyll Chirpy主题+Github Pages搭建个人博客</title>
-    <link href="https://yurlak.github.io/posts/Jekyll-Chirpy%E4%B8%BB%E9%A2%98+Github-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="alternate" type="text/html" title="Jekyll Chirpy主题+Github Pages搭建个人博客" />
+    <link href="http://localhost:4000/posts/Jekyll-Chirpy%E4%B8%BB%E9%A2%98+Github-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="alternate" type="text/html" title="Jekyll Chirpy主题+Github Pages搭建个人博客" />
     <published>2022-08-04T00:00:00+08:00</published>
   
     <updated>2022-08-04T00:00:00+08:00</updated>
   
-    <id>https://yurlak.github.io/posts/Jekyll-Chirpy%E4%B8%BB%E9%A2%98+Github-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
-    <content src="https://yurlak.github.io/posts/Jekyll-Chirpy%E4%B8%BB%E9%A2%98+Github-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
+    <id>http://localhost:4000/posts/Jekyll-Chirpy%E4%B8%BB%E9%A2%98+Github-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <content src="http://localhost:4000/posts/Jekyll-Chirpy%E4%B8%BB%E9%A2%98+Github-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
     <author>
       <name>YurlakSun</name>
     </author>
@@ -185,13 +237,13 @@ Jekyll的默认主题是minima，我选择了适合编写个人BLOG的Chirpy主�
   
   <entry>
     <title>Welcome</title>
-    <link href="https://yurlak.github.io/posts/Welcome/" rel="alternate" type="text/html" title="Welcome" />
-    <published>2022-07-28T00:00:00+08:00</published>
+    <link href="http://localhost:4000/posts/Welcome/" rel="alternate" type="text/html" title="Welcome" />
+    <published>2022-07-27T00:00:00+08:00</published>
   
-    <updated>2022-07-28T00:00:00+08:00</updated>
+    <updated>2022-07-27T00:00:00+08:00</updated>
   
-    <id>https://yurlak.github.io/posts/Welcome/</id>
-    <content src="https://yurlak.github.io/posts/Welcome/" />
+    <id>http://localhost:4000/posts/Welcome/</id>
+    <content src="http://localhost:4000/posts/Welcome/" />
     <author>
       <name>YurlakSun</name>
     </author>
