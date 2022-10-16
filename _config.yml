@@ -1,18 +1,18 @@
 # Site settings
 title: YURLAK's Blog # site title
 description: >- # site description
-  JUST DO IT.
-lang: en-US # default lang
+  JUST GO FOR IT.
+lang: zh-CN # default lang
 timezone: Asia/Shanghai # set your timezone
 image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
 repo: https://github.com/YURLAK # site repo [optional]
-mode: dark # default theme "dark" | "light"
+mode:  # default theme "dark" | "light"
 
 # Profile settings
 author:
   name: YURLAK # author name
   bio: >- # tell to the world
-    
+    JUST GO FOR IT.
   username: YURLAK # general username
   github: YURLAK # github username
   twitter: twitter_username # twitter username
