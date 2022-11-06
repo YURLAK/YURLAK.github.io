@@ -7,11 +7,10 @@ comments: true
 
 Hi！我是一名初一生，这是我自己搭建的Jekyll个人blog。
 
-## Hobbies
+### Hobbies
+闲暇之余喜欢编程、长跑、听音乐。
 
-喜欢编程、跑步、音乐。
-
-## Contact
+### Contact
 
 **E-mail:**[1254316639@qq.com](mailto:1254316639@qq.com)
 
