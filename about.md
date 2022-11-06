@@ -7,12 +7,12 @@ comments: true
 
 Hi！我是一名初一生，这是我自己搭建的Jekyll个人blog。
 
-## 爱好
+## Hobbies
 
-喜欢编程、跑步、电摇。喜欢的歌手有**Justin Bieber**、**Alan Walker**、**Ed Sheeran**等等。
+喜欢编程、跑步、音乐。
 
-## 我正在……
+## Contact
 
-能写点Python、C++之类的，目前正在学习算法。
+**E-mail:**[](1254316639@qq.com)
 
-## 感谢你的关注！
+## Thanks for following!
