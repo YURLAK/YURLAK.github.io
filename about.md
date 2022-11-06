@@ -13,6 +13,6 @@ Hi！我是一名初一生，这是我自己搭建的Jekyll个人blog。
 
 ## Contact
 
-**E-mail:**[](1254316639@qq.com)
+**E-mail:**[1254316639@qq.com]()
 
 ## Thanks for following!
