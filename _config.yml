@@ -1,90 +1,30 @@
-# Site settings
-title: YURLAK's Blog # site title
-description: >- # site description
-  YURLAK's personal blog.
-lang: en-US # default lang
-timezone: Asia/Shanghai # set your timezone
-image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
-repo: https://github.com/YURLAK # site repo [optional]
-mode: light # default theme "dark" | "light"
-
-# Profile settings
+title: Yurlak's Blog
 author:
-  name: YURLAK # author name
-  bio: >- # tell to the world
-    JUST GO FOR IT.
-  username: YURLAK # general username
-  github: YURLAK # github username
-  twitter: twitter_username # twitter username
-  facebook: facebook_username # facebook username
-  email: 1254316639@qq.com # email adress
-  avatar: /assets/img/62188A7C-27D0-41C1-9671-37BC7D07C181.jpeg # change with your own avatar
+  name: YURLAK
+  email: 1254316639@qq.com
+description: Hello!!!
 
-# URL settings
-url: "https://YURLAK.github.io" #
-baseurl:
-permalink: /:title/
-google_analytics: # leave it blank if not wish
-fb_appid:
+show_excerpts: false # set to true to show excerpts on the homepage
 
-# Collection setting
-collections:
-  posts:
-    output: true
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
 
-# Markdown settings
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  syntax_highlighter: rouge
+  # generate social links in footer
+  social_links:
 
-# Default front matter
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: post
-      comments: true
+    - { platform: github,         user_url: "https://github.com/YURLAK" }
+    - { platform: telegram,       user_url: "https://t.me/YURLAK" }
 
-# Jekyll Compose default front matter
-jekyll_compose:
-  post_default_front_matter:
-    modified:
-    tags: []
-    description:
-  draft_default_front_matter:
-    modified:
-    tags: []
-    description:
-
-# Homepage limit posts
-number_of_posts: 10
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
 
 # Build settings
-# theme: klise
-sass:
-  style: compressed
+theme: minima
 
-include:
-  - _redirects
-  - .htaccess
-
-exclude:
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - CHANGELOG.md
-  - README.md
-  - node_modules
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
-  - lighthouse.png
-  - klise-*.gem
-  - klise.gemspec
-
-# Plugins
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-postfiles
+ - jekyll-feed
+ - jekyll-seo-tag

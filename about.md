@@ -1,17 +1,18 @@
 ---
-title: About/简介
-permalink: /about/
 layout: page
-comments: true
+title: About
+permalink: /about/
 ---
 
-Hi！我是一名初一生，这是我自己搭建的Jekyll个人blog。
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
-### Hobbies
-闲暇之余喜欢编程、长跑、听音乐。
+You can find the source code for Minima at GitHub:
+[jekyll][jekyll-organization] /
+[minima](https://github.com/jekyll/minima)
 
-### Contact
+You can find the source code for Jekyll at GitHub:
+[jekyll][jekyll-organization] /
+[jekyll](https://github.com/jekyll/jekyll)
 
-**E-mail:**[1254316639@qq.com](mailto:1254316639@qq.com)
 
-## Thanks for following!
+[jekyll-organization]: https://github.com/jekyll
