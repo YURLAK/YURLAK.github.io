@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - demo-site
+      - gh-pages
 
 jobs:
   deploy_demo_site:
@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: jekyll/minima
-          ref: demo-site
+          ref: gh-pages
       - name: Set up Ruby 2.7
         uses: ruby/setup-ruby@v1
         with:
