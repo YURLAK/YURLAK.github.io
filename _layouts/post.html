@@ -30,7 +30,7 @@ layout: default
     {{ content }}
   </div>
 
-  {%- if site.disqus.shortname -%}
+  {%- if site.comments.provider -%}
     {%- include comments.html -%}
   {%- endif -%}
 
