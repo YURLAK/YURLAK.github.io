@@ -13,7 +13,6 @@ minima:
 
   # generate social links in footer
   social_links:
-
     - { platform: github,         user_url: "https://github.com/YURLAK" }
     - { platform: telegram,       user_url: "https://t.me/YURLAK" }
 
