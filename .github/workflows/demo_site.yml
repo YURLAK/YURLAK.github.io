@@ -3,7 +3,7 @@ name: Build and Deploy Demo Site
 on:
   push:
     branches:
-      - master
+      - main
       - demo-site
 
 jobs:
