@@ -7,7 +7,7 @@ on:
       - gh-pages
 
 jobs:
-  deploy_demo_site:
+  deploy:
     runs-on: "ubuntu-latest"
     env:
       BUNDLE_PATH: "vendor/bundle"
@@ -43,7 +43,7 @@ jobs:
           git add --all
           git -c user.name="${GITHUB_ACTOR}" -c user.email="${GITHUB_ACTOR}@users.noreply.github.com" \
             commit --quiet \
-            --message "Deploy demo-site from ${GITHUB_SHA}" \
+            --message "Deploy site from ${GITHUB_SHA}" \
             --message "$SOURCE_COMMIT"
           git push
 
