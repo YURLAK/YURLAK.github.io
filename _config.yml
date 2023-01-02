@@ -10,7 +10,7 @@ show_excerpts: true # set to true to show excerpts on the homepage
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%b %-d, %Y"
-
+  skin: auto
   # generate social links in footer
   social_links:
     - { platform: github,         user_url: "https://github.com/jekyll/minima" }
@@ -21,34 +21,6 @@ minima:
 # this and add the path to the pages in order as they should show up
 #header_pages:
 # - about.md
-
-# Set which comment system to use
-comments:
-  # 'disqus' / 'giscus' / 'utterances' are available
-  provider:            giscus
-
-# You must install utterances github app before use.(https://github.com/apps/utterances)
-# Make sure all variables are set properly. Check below link for detail.
-# https://utteranc.es/
-utterances:
-  repo:                "username/username.github.io"
-  issue-term:          "pathname"
-  label:               "Comments"
-  theme:               "your_theme"
-
-# You must install giscus github app before use.(https://github.com/apps/giscus)
-# Make sure all variables are set properly. Check below link for detail.
-# https://giscus.vercel.app/
-giscus:
-  repo:                "YURLAK/YURLAK.github.io"
-  repo-id:             "R_kgDOHtjxxA"
-  category:            "Announcements"
-  category-id:         "DIC_kwDOHtjxxM4CQhHC"
-  mapping:             "pathname"
-  reaction-enabled:    "1"
-  theme:               "preferred_color_scheme"
-  crossorigin:         "anonymous"
-  lang:                "zh-CN"
 
 # Build settings
 theme: minima
