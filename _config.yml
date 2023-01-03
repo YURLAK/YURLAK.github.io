@@ -22,6 +22,9 @@ minima:
 #header_pages:
 # - about.md
 
+navbar-links:
+  Home: "https://YURLAK.github.io"
+
 # Build settings
 theme: minima
 
