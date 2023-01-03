@@ -14,11 +14,8 @@ minima:
   # generate social links in footer
   social_links:
     - { platform: github,         user_url: "https://github.com/jekyll/minima" }
-    #- { platform: telegram,       user_url: "https://t.me/jekyll" }
+    - { platform: telegram,       user_url: "https://t.me/YURLAK" }
     - { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
-    - platform: telegram  # same as SVG filename.
-      user_url: "https://t.me/YURLAK"  # URL of profile page.
-      title:  My profile at telegram.  # Optional. Text displayed on hovering over link.
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
