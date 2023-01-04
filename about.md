@@ -15,4 +15,11 @@ permalink: /about/
 - 2022：**Fedora Workstation 36**
 - 2022~……：**ArchLinux**
 
+### My hobbies
+
+- Terrible Guitar Player.
+- Dragonboarder(Specific vocabulary😄)
+- Music-lover(Especially a fans of **The Chainsmokers**)
+……
+
 *Thanks for following！*
