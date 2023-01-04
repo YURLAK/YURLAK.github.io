@@ -7,7 +7,7 @@ permalink: /about/
 
 ### About this Blog
 
-用`Jekyll`做博客引擎，`Github Pages`自动化部署，使用`minima`主题。使用`Giscus`评论插件，搜索插件是`Simple-Jekyll-Search`呢。
+用`Jekyll`做博客引擎，`Github Pages`自动化部署，使用`minima`主题。`Giscus`作为评论插件，搜索插件是`Simple-Jekyll-Search`呢。
 
 ### My Linux Using History
 
