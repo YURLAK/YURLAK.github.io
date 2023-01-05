@@ -1,6 +1,6 @@
 ### YURLAK's Personal Blog
 
-Welcome to my personal blog!
+Welcome to my personal blog!👋
 
 #### About this blog
 
