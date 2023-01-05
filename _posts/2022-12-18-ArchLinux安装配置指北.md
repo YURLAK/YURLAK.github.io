@@ -13,7 +13,7 @@ tags: [Arch,Linux,指北]
 
 ## 前言
 
-为了便携，我选择将ArchLinux安装在我500GB的Sandisk Extreme SSD上。具体的安装步骤我不在此赘述，你可以详见
+为了便携，我选择将ArchLinux安装在我500GB的Sandisk Extreme SSD上。具体的安装步骤我不在此赘述，你可以详见开头的**参考**部分。
 
 ### 安装前的工作
 
