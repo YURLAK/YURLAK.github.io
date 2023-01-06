@@ -51,7 +51,18 @@ tags: [Arch,Linux,指北]
 
 ##### 挂载分区
 
-:warning: **ArchWiki安装指南中的一句话非常，非常，非常重要：`然后使用 mkdir(1) 创建其他剩余的挂载点（比如 /mnt/efi）并挂载其相应的磁盘卷。`，意思是你需要自己创建每个分区相应的挂载点，我在安装grub的时候就遇到了`cannot found EFI directory`的错误，因为EFI分区的挂载点未被创建。**
+⚠️**ArchWiki安装指南中的一句话非常，非常，非常重要：`然后使用 mkdir(1) 创建其他剩余的挂载点（比如 /mnt/efi）并挂载其相应的磁盘卷。`，意思是你需要自己创建每个分区相应的挂载点，我在安装grub的时候就遇到了`cannot found EFI directory`的错误，因为EFI分区的挂载点未被创建。**
 
-挂载根分区` mount /dev/root_partition（根分区） /mnt`，
+还有忠告一句：`注意： 挂载分区一定要遵循顺序，先挂载根（root）分区（到 /mnt），再挂载引导（boot）分区（到 /mnt/boot 或 /mnt/efi，如果单独分出来了的话），最后再挂载其他分区。否则您可能遇到安装完成后无法启动系统的问题。参见 Talk:Installation guide#Clarify root mount。`
+
+现在挂载根分区`mount /dev/root_partition（根分区） /mnt`，挂载EFI分区`mount /dev/efi_system_partition /mnt/boot`，启用交换空间分区`swapon /dev/swap_partition（交换空间分区）`。
+
+### 安装系统
+
+安装base包、软件包和Linux内核以及常规硬件的固件`pacstrap -K /mnt base linux linux-firmware`，配置系统`genfstab -U /mnt >> /mnt/etc/fstab`，最后`arch-chroot /mnt`进入新系统。
+
+### 安装后的工作
+
+Congratulations！至此你已经成功了一半。
+
 *Loading...*
