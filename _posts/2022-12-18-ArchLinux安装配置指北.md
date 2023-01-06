@@ -27,6 +27,6 @@ tags: [Arch,Linux,指北]
 
 #### 换源
 
-更换清华源，更换两个：[ArchLinux源](https://mirrors.tuna.tsinghua.edu.cn/help/archlinux/)和[archlinuxcn源](https://mirrors.tuna.tsinghua.edu.cn/help/archlinuxcn/)，官方有具体的步骤，在此不再赘述。
+更换清华源，更换两个：[archlinux源](https://mirrors.tuna.tsinghua.edu.cn/help/archlinux/)和[archlinuxcn源](https://mirrors.tuna.tsinghua.edu.cn/help/archlinuxcn/)，官方有具体的步骤，在此不再赘述。
 
 *Loading...*
