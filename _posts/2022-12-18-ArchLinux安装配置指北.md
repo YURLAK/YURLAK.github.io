@@ -29,4 +29,29 @@ tags: [Arch,Linux,指北]
 
 更换清华源，更换两个：[archlinux源](https://mirrors.tuna.tsinghua.edu.cn/help/archlinux/)和[archlinuxcn源](https://mirrors.tuna.tsinghua.edu.cn/help/archlinuxcn/)，官方有具体的步骤，在此不再赘述。
 
+#### 分区
+
+##### 新建分区
+
+用`fdisk -l`查看磁盘，找到你要安装的磁盘，默认是`/dev/sda`，下面我们用`cfdisk /dev/sd~`进行分区，因为它可视化，操作简单。
+
+我的分区方案是：
+
+- *2G* `EFI System`（EFI分区）
+- *4G* `Linux Swap`（交换空间分区）
+- *其余* `Linux Filesystem`（根分区）
+
+具体步骤详见[这里](https://blog.csdn.net/qq_32760901/article/details/90695462)。
+
+分区完后`write`，记得询问时输入`yes`，回车不起作用。
+
+##### 格式化分区
+
+分区完成后执行`mkfs.ext4 /dev/root_partition（根分区）`，`mkswap /dev/swap_partition（交换空间分区）`，`mkfs.fat -F 32 /dev/efi_system_partition（EFI分区）`
+
+##### 挂载分区
+
+:warning: **ArchWiki安装指南中的一句话非常，非常，非常重要：`然后使用 mkdir(1) 创建其他剩余的挂载点（比如 /mnt/efi）并挂载其相应的磁盘卷。`，意思是你需要自己创建每个分区相应的挂载点，我在安装grub的时候就遇到了`cannot found EFI directory`的错误，因为EFI分区的挂载点未被创建。**
+
+挂载根分区` mount /dev/root_partition（根分区） /mnt`，
 *Loading...*
