@@ -21,4 +21,12 @@ tags: [Arch,Linux,指北]
 
 这里推荐使用[balenaEtcher](https://www.balena.io/etcher/)进行烧录，到[清华大学镜像站](https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/)获取ArchLinux的iso文件。烧录完成后进入`BIOS`，注意将启动顺序改为首选`USB Device`，并且`Disabled`掉`Secure Boot`选项。
 
+#### 联网
+
+启动后进入命令行界面，我们输入`iwctl`来联网，输入`device list`查看网卡，默认是`wlan0`，接着`station 网卡名 scan`，然后`station 网卡名 get-networks`获取周围的wifi扫描结果，最后`station 网卡名 connect wifi名`连接网络，注意不会有任何提示，你只需要ping一个网址来测试联网是否成功。
+
+#### 换源
+
+更换清华源，更换两个：[ArchLinux源](https://mirrors.tuna.tsinghua.edu.cn/help/archlinux/)和[archlinuxcn源](https://mirrors.tuna.tsinghua.edu.cn/help/archlinuxcn/)，官方有具体的步骤，在此不再赘述。
+
 *Loading...*
