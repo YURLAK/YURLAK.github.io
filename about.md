@@ -13,7 +13,7 @@ permalink: /about/
 
 - 2020~2021：**Ubuntu 20.04LTS**
 - 2022：**Fedora Workstation 36**
-- 2022~……：**ArchLinux**
+- 2022~……：**ArchLinux KDE**
 
 ### My hobbies
 
