@@ -18,8 +18,9 @@ permalink: /about/
 ### My hobbies
 
 - Terrible Guitar Player.
-- Dragonboarder(Specific vocabulary😄)
-- Music-lover(Especially a fans of **The Chainsmokers**)
+- Dragonboarder(Specific vocabulary😄).
+- Music-lover(Especially a fans of **The Chainsmokers**).
+- Terrible Guitar Player🎸.
 ……
 
 *Thanks for following！*
