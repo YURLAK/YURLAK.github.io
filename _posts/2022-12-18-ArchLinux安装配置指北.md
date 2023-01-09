@@ -47,15 +47,23 @@ tags: [Arch,Linux,指北]
 
 ##### 格式化分区
 
-分区完成后执行`mkfs.ext4 /dev/root_partition（根分区）`，`mkswap /dev/swap_partition（交换空间分区）`，`mkfs.fat -F 32 /dev/efi_system_partition（EFI分区）`
+分区完成后执行：
+
+```
+mkfs.ext4 /dev/root_partition（根分区）
+mkswap /dev/swap_partition（交换空间分区）
+mkfs.fat -F 32 /dev/efi_system_partition（EFI分区）
+```
 
 ##### 挂载分区
 
 ⚠️**ArchWiki安装指南中的一句话非常，非常，非常重要：`然后使用 mkdir(1) 创建其他剩余的挂载点（比如 /mnt/efi）并挂载其相应的磁盘卷。`，意思是你需要自己创建每个分区相应的挂载点，我在安装grub的时候就遇到了`cannot found EFI directory`的错误，因为EFI分区的挂载点未被创建。**
 
-还有忠告一句：`注意： 挂载分区一定要遵循顺序，先挂载根（root）分区（到 /mnt），再挂载引导（boot）分区（到 /mnt/boot 或 /mnt/efi，如果单独分出来了的话），最后再挂载其他分区。否则您可能遇到安装完成后无法启动系统的问题。参见 Talk:Installation guide#Clarify root mount。`
+还有忠告一句：`挂载分区一定要遵循顺序，先挂载根（root）分区（到 /mnt），再挂载引导（boot）分区（到 /mnt/boot 或 /mnt/efi，如果单独分出来了的话），最后再挂载其他分区。否则您可能遇到安装完成后无法启动系统的问题。`
 
-现在挂载根分区`mount /dev/root_partition（根分区） /mnt`，挂载EFI分区`mount /dev/efi_system_partition /mnt/boot`，启用交换空间分区`swapon /dev/swap_partition（交换空间分区）`。
+现在挂载根分区`mount /dev/root_partition（根分区） /mnt`；
+挂载EFI分区`mount /dev/efi_system_partition /mnt/boot`；
+启用交换空间分区`swapon /dev/swap_partition（交换空间分区）`。
 
 ### 安装系统
 
@@ -65,4 +73,50 @@ tags: [Arch,Linux,指北]
 
 Congratulations！至此你已经成功了一半。
 
-*Loading...*
+#### 安装图形界面
+
+知名的Linux桌面环境有`GNOME`，`KDE Plasma`，`Xfce`等等。这里我选择安装**KDE**~~毕竟我个人认为GNOME不是很友好~~。
+
+##### KDE
+
+首先安装plasma`pacman -S plasma`，安装sddm显示管理器`pacman -S sddm`。
+
+现在在你的`.xinitrc`（需要自己拷贝一份`cp /etc/X11/xinit/xinitrc ~/.xinitrc`）文件中添加`export DESKTOP_SESSION=plasma`和`exec startplasma-x11`这两行代码。
+
+最后`sudo systemctl enable sddm`，`reboot`重启后进入桌面。
+
+##### GNOME
+
+安装GNOME包`pacman -S gnome gnome-extra（拓展软件，可不装）`.
+
+编辑`.xinitrc`，在文件末尾添加如下代码（选一种添加）：
+
+GNOME Classic:
+
+```
+export XDG_CURRENT_DESKTOP=GNOME-Classic:GNOME
+export GNOME_SHELL_SESSION_MODE=classic
+exec gnome-session
+```
+
+GNOME on Xorg:
+
+```
+export XDG_SESSION_TYPE=x11
+export GDK_BACKEND=x11
+exec gnome-session
+```
+
+然后安装gdm显示管理器`pacman -S gdm`，最后`sudo systemctl enable gdm`，`reboot`！
+
+#### 字体
+
+这里推荐安装如下字体：`sudo pacman -S ttf-dejavu wqy-microhei wqy-zenhei`
+
+#### 输入法
+
+安装ibus拼音`pacman -S ibus ibus-libpinyin`
+
+在此不再赘述~~（KDE的ibus真的搞死人……）~~
+
+## 祝你成功！
