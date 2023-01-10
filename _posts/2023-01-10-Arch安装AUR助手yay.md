@@ -7,7 +7,10 @@ tags: [Arch,Linux]
 ---
 >“Arch 用户软件仓库（Arch User Repository，AUR）是为用户而建、由用户主导的 Arch 软件仓库。AUR 中的软件包以软件包生成脚本（PKGBUILD）的形式提供，用户自己通过 makepkg 生成包，再由 pacman 安装。创建 AUR 的初衷是方便用户维护和分享新软件包，并由官方定期从中挑选软件包进入 community 仓库。”
 
+## 介绍
 Pacman 是一个功能强大的包管理器，作为基于 Arch 的发行版的默认设置提供，但它缺乏从 Arch 用户存储库 (AUR) 下载包的功能，所以就有了yay（Yet Another Yogurt）这个工具（Arch不内置yay），本文将介绍ArchLinux下AUR助手 **yay** 的安装。
+
+## 安装
 
 首先克隆yay仓库，执行`git clone https://aur.archlinux.org/yay.git`，然后cd到yay文件夹。
 
@@ -17,3 +20,14 @@ Pacman 是一个功能强大的包管理器，作为基于 Arch 的发行版的�
 
 `sudo chown -R 你的用户名 ./yay`
 
+## 使用
+
+yay的使用方法与pacman相近，以下是一些常用命令：
+```
+yay -S XXX   （安装）
+yay -R XXX   （卸载）
+yay -Rs XXX  （卸载XXX及其相关依赖）
+yay -Syu XXX  （更新）
+```
+
+### Yay!
