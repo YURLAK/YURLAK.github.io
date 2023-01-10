@@ -27,7 +27,7 @@ yay的使用方法与pacman相近，以下是一些常用命令：
 yay -S XXX   （安装）
 yay -R XXX   （卸载）
 yay -Rs XXX  （卸载XXX及其相关依赖）
-yay -Syu XXX  （更新）
+yay -Syu XXX （更新）
 ```
 
 ### Yay!
