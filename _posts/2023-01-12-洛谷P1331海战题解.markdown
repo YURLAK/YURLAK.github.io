@@ -3,7 +3,7 @@ layout: post
 title: "洛谷P1331海战题解"
 date: 2023-01-12
 categories: algorithm
-tags: [DFS,深度优先搜索,算法，题解]
+tags: [DFS,深度优先搜索,算法,题解]
 ---
 
 先上题目啦：
