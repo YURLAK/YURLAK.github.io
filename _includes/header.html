@@ -1,7 +1,5 @@
 <header class="site-header">
-  {%- if site.kramdown == true -%}
-    {%- include kramdown.html -%}
-  {%- endif -%}
+  {%- include kramdown.html -%}
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
