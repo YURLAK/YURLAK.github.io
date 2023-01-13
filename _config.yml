@@ -25,7 +25,7 @@ minima:
 
 #kramdown setting
 
-kramdown: false
+kramdown: true
 
 navbar-links:
   Home: "https://YURLAK.github.io"
