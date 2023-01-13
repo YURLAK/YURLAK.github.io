@@ -24,7 +24,7 @@ minima:
 # - about.md
 
 #markdown settings
-markdown: 
+markdown: kramdown
 
 navbar-links:
   Home: "https://YURLAK.github.io"
