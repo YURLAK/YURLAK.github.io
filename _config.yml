@@ -23,8 +23,9 @@ minima:
 #header_pages:
 # - about.md
 
-#markdown settings
-markdown: 
+#kramdown setting
+
+kramdown: true
 
 navbar-links:
   Home: "https://YURLAK.github.io"
