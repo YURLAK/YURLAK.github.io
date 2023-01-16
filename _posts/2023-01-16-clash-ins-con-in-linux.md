@@ -20,7 +20,5 @@ Import your subscription link,enable the `TUN mode` option.Then swim on the Inte
 
 ![image](https://user-images.githubusercontent.com/77920708/212615665-93830b90-f140-41e6-aa39-d89e2e95ead6.png)
 
-And instead Port `7890` to your port.
-
-![image](https://user-images.githubusercontent.com/77920708/212615894-a30f8a35-1bfd-48c1-a349-54b82d710857.png)
+And last replace 7890 with your port.
 
