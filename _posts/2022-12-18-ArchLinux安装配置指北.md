@@ -75,15 +75,7 @@ Congratulations！至此你已经成功了一半。
 
 #### 安装图形界面
 
-知名的Linux桌面环境有`GNOME`，`KDE Plasma`，`Xfce`等等。这里我选择安装**KDE**~~毕竟我个人认为GNOME不是很友好~~。
-
-##### KDE
-
-首先安装plasma`pacman -S plasma`，安装sddm显示管理器`pacman -S sddm`。
-
-现在在你的`.xinitrc`（需要自己拷贝一份`cp /etc/X11/xinit/xinitrc ~/.xinitrc`）文件中添加`export DESKTOP_SESSION=plasma`和`exec startplasma-x11`这两行代码。
-
-最后`sudo systemctl enable sddm`，`reboot`重启后进入桌面。
+知名的Linux桌面环境有`GNOME`，`KDE Plasma`，`Xfce`等等。这里我选择安装**GNOME**。
 
 ##### GNOME
 
@@ -91,7 +83,7 @@ Congratulations！至此你已经成功了一半。
 
 编辑`.xinitrc`，在文件末尾添加如下代码（选一种添加）：
 
-GNOME Classic:
+GNOME Classic（推荐）:
 
 ```
 export XDG_CURRENT_DESKTOP=GNOME-Classic:GNOME
@@ -109,14 +101,22 @@ exec gnome-session
 
 然后安装gdm显示管理器`pacman -S gdm`，最后`sudo systemctl enable gdm`，`reboot`！
 
+##### KDE
+
+首先安装plasma`pacman -S plasma`，安装sddm显示管理器`pacman -S sddm`。
+
+现在在你的`.xinitrc`（需要自己拷贝一份`cp /etc/X11/xinit/xinitrc ~/.xinitrc`）文件中添加`export DESKTOP_SESSION=plasma`和`exec startplasma-x11`这两行代码。
+
+最后`sudo systemctl enable sddm`，`reboot`重启后进入桌面。
+
+其他桌面的安装详见ArchWiki。
+
 #### 字体
 
 这里推荐安装如下字体：`sudo pacman -S ttf-dejavu wqy-microhei wqy-zenhei`
 
 #### 输入法
 
-安装ibus拼音`pacman -S ibus ibus-libpinyin`
-
-在此不再赘述~~（KDE的ibus真的搞死人……）~~
+安装ibus拼音`pacman -S ibus ibus-libpinyin`，最后在`设置`->`键盘`中添加你的输入法（例如ibus的**Sunpinyin**）。
 
 ## 祝你成功！
