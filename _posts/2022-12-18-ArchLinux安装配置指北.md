@@ -81,7 +81,7 @@ Congratulations！至此你已经成功了一半。
 
 安装GNOME包`pacman -S gnome gnome-extra（拓展软件，可不装）`.
 
-编辑`.xinitrc`，在文件末尾添加如下代码（选一种添加）：
+编辑`.xinitrc`（需要自己拷贝一份`cp /etc/X11/xinit/xinitrc ~/.xinitrc`），在文件末尾添加如下代码（选一种添加）：
 
 GNOME Classic（推荐）:
 
@@ -105,7 +105,7 @@ exec gnome-session
 
 首先安装plasma`pacman -S plasma`，安装sddm显示管理器`pacman -S sddm`。
 
-现在在你的`.xinitrc`（需要自己拷贝一份`cp /etc/X11/xinit/xinitrc ~/.xinitrc`）文件中添加`export DESKTOP_SESSION=plasma`和`exec startplasma-x11`这两行代码。
+现在在你的`.xinitrc`文件中添加`export DESKTOP_SESSION=plasma`和`exec startplasma-x11`这两行代码。
 
 最后`sudo systemctl enable sddm`，`reboot`重启后进入桌面。
 
