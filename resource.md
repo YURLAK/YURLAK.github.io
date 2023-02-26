@@ -5,5 +5,8 @@ permalink: /resource/
 ---
 在这里下载相关资源：
 
-- [Y-Chat(Y聊天室)EXE下载](/assets/download/Y-Chat.zip)
-- [Y-Chat Client EXE下载](/assets/download/Y聊天室客户端.exe)
+Y-Chat(Y聊天室项目):
+
+- [YClient EXE下载](/assets/download/YClient.exe)
+
+- [YServer EXE下载](/assets/download/YServer.exe)
