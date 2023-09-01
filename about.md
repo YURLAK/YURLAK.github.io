@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-欢迎来到我的Blog！以此记录我的中学生活。我是一枚初一GEEK，对网络、算法和Linux感兴趣，也正在学习呀。
+欢迎来到**Miles**的Blog！以此记录我的中学生活。我是一枚初2️⃣GEEK，对网络、算法和Linux感兴趣，也正在学习呀。
 
 ### About this Blog
 
@@ -19,7 +19,7 @@ permalink: /about/
 
 - Terrible Guitar Player.
 - Dragonboarder(Specific vocabulary😄).
-- Music-lover(Especially a fans of **The Chainsmokers**).
+- Music-lover(Especially a fans of **Calvin Harris**).
 - Terrible Guitar Player🎸.
 ……
 
