@@ -1,13 +1,13 @@
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 body {
-    margin: 0;
-    overflow: hidden;
+  position: relative;
+  z-index: 0;
 }
-
-particles-js {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
-    background-color: black;
-}
-
