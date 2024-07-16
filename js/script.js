@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // 配置 Particles.js
     particlesJS("particles-js", {
         particles: {
             number: {
@@ -23,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             opacity: {
-                value: 5,
+                value: 0.5,
                 random: false,
                 anim: {
                     enable: false,
@@ -46,12 +45,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 enable: true,
                 distance: 150,
                 color: "#ffffff",
-                opacity: 0.8,
-                width: 2
+                opacity: 0.4,
+                width: 1
             },
             move: {
                 enable: true,
-                speed: 1,
+                speed: 6,
                 direction: "none",
                 random: false,
                 straight: false,
@@ -106,4 +105,3 @@ document.addEventListener("DOMContentLoaded", function() {
         retina_detect: true
     });
 });
-
