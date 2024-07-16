@@ -45,13 +45,13 @@ document.addEventListener("DOMContentLoaded", function() {
             line_linked: {
                 enable: true,
                 distance: 150,
-                color: "#88C3E5",
+                color: "#ffffff",
                 opacity: 0.8,
                 width: 2
             },
             move: {
                 enable: true,
-                speed: 6,
+                speed: 1,
                 direction: "none",
                 random: false,
                 straight: false,
