@@ -30,7 +30,11 @@ navbar-links:
 theme: minima
 
 # Google Analytics 
-google_analytics:G-SND56RB6P3 
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: G-SND56RB6P3 
+    anonymize_ip: true
 
 plugins:
  - jekyll-feed
