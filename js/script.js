@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             opacity: {
-                value: 5,
+                value: 0.5,  // 修改 opacity 的值
                 random: false,
                 anim: {
                     enable: false,
@@ -106,4 +106,3 @@ document.addEventListener("DOMContentLoaded", function() {
         retina_detect: true
     });
 });
-
