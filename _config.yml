@@ -29,6 +29,9 @@ navbar-links:
 # Build settings
 theme: minima
 
+# Google Analytics 
+google_analytics:G-SND56RB6P3 
+
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
