@@ -3,24 +3,20 @@ layout: page
 title: About
 permalink: /about/
 ---
-欢迎来到**Miles**的Blog！以此记录我的中学生活。我是一枚初2️⃣GEEK，对网络、算法和Linux感兴趣，也正在学习呀。
+欢迎来到**Miles**的Blog！以此记录我的中学生活。
 
-### About this Blog
+`Jekyll`博客引擎，`Github Pages`自动化部署，使用`minima`主题。`Giscus`评论插件，搜索插件`Simple-Jekyll-Search`。
 
-用`Jekyll`做博客引擎，`Github Pages`自动化部署，使用`minima`主题。`Giscus`作为评论插件，搜索插件是`Simple-Jekyll-Search`呢。
+吾——初三**蒟蒻**一枚，虽不才，学未至顶，曾习编程，尝略涉猎计算机、网络、系统等知识，虽未精通，一知半解，但善用** ChatGPT** 。
 
-### My Linux Using History
+**严肃的**四分配、自由泳者，我的**PB**有：
 
-- 2020~2021：**Ubuntu 20.04LTS**
-- 2022：**Fedora Workstation 36**
-- 2022~……：**ArchLinux**
+- HM 1：37：04
+- 10km 42:13
+- 5km 20:18
+- 1km 3:02
+- 游泳 100m 1:45 25m 19.50
 
-### My hobbies
-
-- Terrible Guitar Player.
-- Dragonboarder(Specific vocabulary😄).
-- Music-lover(Especially a fans of **Calvin Harris**).
-- Terrible Guitar Player🎸.
-……
+闲暇之余，**EDM**乃最爱，martin garrix等的忠实**追随者**。
 
 *Thanks for following！*
