@@ -11,12 +11,12 @@ permalink: /about/
 
 **严肃的**四分配、自由泳者，我的**PB**有：
 
-- HM 1：37：04
+- HM 1:37:04
 - 10km 42:13
 - 5km 20:18
 - 1km 3:02
 - 游泳 100m 1:45 25m 19.50
 
-闲暇之余，**EDM**乃最爱，martin garrix等的忠实**追随者**。
+闲暇之余，**EDM**乃最爱，**martin garrix**等的忠实**追随者**。
 
 *Thanks for following！*
