@@ -5,7 +5,7 @@ permalink: /resource/
 ---
 ## 在这里下载相关资源：
 
-### **1°FL Studio Producer Edition v21.1.1 [build 3750] 全插件版 Windows**
+### 1°FL Studio Producer Edition v21.1.1 [build 3750] 全插件版 Windows
 
   - **Setup**
     - [**`flstudio 21.1.1 3750主程序`**](https://www.mediafire.com/file/6vm3uuhd9uf3ppb/flstudio_win64_21.1.1.3750.exe/file)
